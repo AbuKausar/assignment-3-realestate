@@ -3,16 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Renterio</title>
+    <title>Rinterio</title>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/b3202a08f0.js" crossorigin="anonymous"></script>
     <!-- daisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
 
     <script>
     tailwind.config = {
@@ -20,6 +23,8 @@
         extend: {
           colors: {
             clifford: '#da373d',
+            lightGreen: "#ABEF5F",
+            lightGray: "#737373",
           }
         }
       }
@@ -33,6 +38,52 @@
     </style>
 </head>
 <body class="font-manrope">
-    <h1>Project setup done</h1>
+    <header class= "bg-gradient-to-b from-gray-300 to-white-50">
+        <div class="navbar md:container mx-auto md:pt-10 pt-6">
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Home</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Portfolio</a></li>
+                        <li><a>Blogs</a></li>
+                        <li><a>Contact Us</a></li>
+                    </ul>
+                </div>
+                <a class="btn btn-ghost text-3xl font-extrabold"> <i class="fa-solid fa-arrow-up text-xl bg-lightGreen rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#494949] text-base font-extrabold">Home</a></li>
+                    <li><a class="text-base text-lightGray">Services</a></li>
+                    <li><a class="text-base text-lightGray">Portfolio</a></li>
+                    <li><a class="text-base text-lightGray">Blogs</a></li>
+                    <li><a class="text-base text-lightGray">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <button class="btn btn-ghost btn-circle bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle bg-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                </button>
+                <a class="btn rounded-full text-xl font-extrabold bg-lightGreen">Book Consult <i
+                    class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i></a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
