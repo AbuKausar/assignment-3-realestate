@@ -38,17 +38,25 @@
     </style>
 </head>
 <body class="font-manrope">
-    <header class= "bg-gradient-to-b from-gray-200 to-white-50">
+    <header class="bg-gradient-to-b from-gray-200 to-white-50">
         <div class="navbar md:container mx-auto md:pt-10 pt-6">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <div class="navbar-start flex justify-between w-full">
+                <div class="flex items-center">
+                    <a class="btn btn-ghost text-3xl font-extrabold">
+                        <i class="fa-solid fa-arrow-up text-xl bg-lightGreen rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i>
+                        Rinterio
+                    </a>
+                </div>  
+                <div class="dropdown flex lg:hidden justify-end">
+                    <div tabindex="0" role="button" class="btn btn-ghost">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
                         <li><a>Home</a></li>
                         <li><a>Services</a></li>
                         <li><a>Portfolio</a></li>
@@ -56,7 +64,6 @@
                         <li><a>Contact Us</a></li>
                     </ul>
                 </div>
-                <a class="btn btn-ghost text-3xl font-extrabold"> <i class="fa-solid fa-arrow-up text-xl bg-lightGreen rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i> Rinterio</a>
             </div>
             <div class="navbar-center hidden lg:flex">
                 <ul class="menu menu-horizontal px-1">
@@ -67,51 +74,65 @@
                     <li><a class="text-base text-lightGray">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="navbar-end gap-4">
-                <button class="btn btn-ghost btn-circle bg-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                    </svg>
-                </button>
-                <button class="btn btn-ghost btn-circle bg-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                    </svg>
-                </button>
-                <a class="btn rounded-full text-xl font-extrabold bg-lightGreen">Book Consult <i
-                    class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i></a>
+            <div class="navbar-end hidden md:flex gap-4">
+                <div class="flex justify-center md:justify-start">
+                    <button class="btn btn-ghost btn-circle bg-white hidden md:flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex justify-center md:justify-start">
+                    <button class="btn btn-ghost btn-circle bg-white hidden md:flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="flex justify-center md:justify-start">
+                    <a
+                        class="btn rounded-full text-xl font-extrabold bg-lightGreen hidden md:inline-flex items-center gap-2">
+                        Book Consult
+                        <i class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="hero pb-20">
             <div class="hero-content flex-col md:flex-col">
-                <img src="./images/banner.png"
-                    class="max-w-sm md:max-w-lg rounded-lg"/>
+                <img src="./images/banner.png" class="max-w-sm md:max-w-lg rounded-lg" />
                 <div class="text-center">
-                    <h1 class="text-6xl font-extrabold leading-tight">A barn house of this design has a <br>striking appearance</h1>
+                    <h1 class="lg:text-6xl text-3xl font-extrabold leading-tight">A barn house of this design has a <br>striking
+                        appearance</h1>
                     <p class="py-6 text-base font-medium md:w-3/4 mx-auto text-[#494949]">
-                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
-                    metal accents, and large windows that flood the space with natural light.
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring
+                        weathered wood, sleek
+                        metal accents, and large windows that flood the space with natural light.
                     </p>
-                    <button class="btn rounded-full text-xl font-extrabold bg-[#ABEF5F80]">View Details <i
-                        class="fa-solid fa-arrow-up text-xl bg-lightGreen text-black rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i></button>
+                    <button class="btn w-full md:w-auto rounded-full text-xl font-extrabold bg-[#ABEF5F80]">View Details <i
+                            class="fa-solid fa-arrow-up text-xl bg-lightGreen text-black rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i>
+                    </button>
                 </div>
             </div>
         </div>
     </header>
+
     <main>
         <!-- we design thoughtful -->
         <section class="we-design-thoughtful">
             <div class="hero bg-[#F4F4F4] min-h-screen">
-                <div class="hero-content  gap-10 flex-col lg:flex-row-reverse">
+                <div class="hero-content  gap-10 flex flex-col-reverse md:flex-row-reverse">
                     <img src="./images/Rectangle.png"
                         class="max-w-sm md:max-w-screen-md rounded-lg" />
                     <div class="relative">
-                        <img class="absolute -top-16 -left-10" src="./images/Vector.png" alt="">
-                        <button class="btn text-[#494949] text-base font-bold rounded-full bg-white"> <i class="fa-solid fa-arrow-right"></i>About us</button>
-                        <h1 class="text-5xl text-[#212121] font-bold leading-tight ">We design thoughtful, <br> liveable spaces</h1>
-                        <p class="py-6 text-[#494949] text-base font-medium">
+                        <img class="absolute hidden md:block -top-16 -left-10" src="./images/Vector.png" alt="">
+                        <button class="btn text-[#494949] w-full md:w-auto mb-3 md:m-0 text-base font-bold rounded-full bg-white"> <i class="fa-solid fa-arrow-right"></i>About us</button>
+                        <h1 class="lg:text-5xl text-3xl text-[#212121] text-center md:text-start font-bold leading-tight ">We design thoughtful, <br> liveable spaces</h1>
+                        <p class="py-6 text-[#494949] text-center md:text-start text-base font-medium">
                             The barn house captivates with its blend of rustic charm and
                             modern sophistication, featuring weathered wood, sleek metal accents.
                         </p>
@@ -141,9 +162,9 @@
         </section>
         <!-- work process -->
          <section class="work-process-container bg-[#F4F4F4] pb-24">
-            <div class="work-process-contents container md:container mx-auto text-center">
-                <button class="btn text-[#494949] text-base font-bold rounded-full bg-white mb-3"> <i class="fa-solid fa-arrow-right"></i>How we works</button>
-                    <h1 class="text-5xl text-[#212121] font-bold leading-tight">Our Work Process</h1>
+            <div class="work-process-contents container mx-auto text-center">
+                <button class="btn text-[#494949] text-base font-bold rounded-full bg-white mt-10 md:mt-0 mb-3"> <i class="fa-solid fa-arrow-right"></i>How we works</button>
+                    <h1 class="lg:text-5xl text-3xl text-[#212121] font-bold leading-tight">Our Work Process</h1>
                     <p class="py-6 text-[#494949] text-base font-medium">
                         Streamlined and Client-Focused, Our Step-by-Step Process for Building High-Impact Real Estate Websites.
                     </p>
@@ -185,13 +206,12 @@
             <div class="portfolio-contents">
                 <button class="btn text-[#494949] text-base font-bold rounded-full bg-[#ABEF5F33] mb-3"> <i
                         class="fa-solid fa-arrow-right"></i>Explore our latest works</button>
-                <h1 class="text-5xl text-[#212121] font-bold leading-tight">Our Latest Portfolio</h1>
+                <h1 class="lg:text-5xl text-3xl text-[#212121] font-bold leading-tight">Our Latest Portfolio</h1>
                 <p class="mt-4 mb-8 text-[#494949] text-base font-medium">
-                    Explore our latest projects showcasing innovative designs, seamless user experiences and <br> cutting-edge development
-                    solutions tailored for diverse industries.
+                    Explore our latest projects showcasing innovative designs, seamless user experiences and cutting-edge development solutions tailored for diverse industries.
                 </p>
-                <div class="portfolio-items grid grid-cols-3 gap-4">
-                    <div class="portfolio-item col-span-2 border border-gray-200  p-6 rounded-xl flex items-center gap-8">
+                <div class="portfolio-items grid grid-cols-1 lg:grid-cols-3 gap-4">
+                    <div class="portfolio-item lg:col-span-2 border border-gray-200  p-6 rounded-xl flex flex-col md:flex-row lg:items-center gap-8">
                         <img src="./images/img1.png" alt="">
                         <div>
                             <h4 class="text-[#494949] text-2xl text-start  font-extrabold">Commercial</h4>
@@ -203,16 +223,16 @@
                         </div>
                     </div>
                     <div class="border border-gray-200  p-6 rounded-xl">
-                        <img src="./images/img2.png" alt="">
+                        <img class="w-full md:w-auto" src="./images/img2.png" alt="">
                     </div>
                 </div>
 
-                <div class="portfolio-items grid grid-cols-4 gap-4 mt-5">
+                <div class="portfolio-items grid grid-cols-1 md:grid-cols-4 gap-4 mt-5">
                     <div class="border border-gray-200  p-6 rounded-xl">
-                        <img class="" src="./images/img3.png" alt="">
+                        <img class="w-full md:w-auto" src="./images/img3.png" alt="">
                     </div>
-                    <div class="portfolio-item col-span-2 border border-gray-200  p-6 rounded-xl flex items-center gap-8">
-                        <img src="./images/img4.png" alt="">
+                    <div class="portfolio-item md:col-span-2 border border-gray-200  p-6 rounded-xl flex flex-col md:flex-row lg:items-center items-center gap-8">
+                        <img class="w-full md:w-auto" src="./images/img4.png" alt="">
                         <div>
                             <h4 class="text-[#494949] text-2xl text-start  font-extrabold">Residential</h4>
                             <p class="text-[#737373] text-base text-start font-medium pt-4 pb-3">
@@ -224,14 +244,15 @@
                         </div>
                     </div>
                         <div class="border border-gray-200  p-6 rounded-xl">
-                            <img class="" src="./images/img5.png" alt="">
+                            <img class="w-full md:w-auto" src="./images/img5.png" alt="">
                         </div>
                 </div>
             </div>
           </section>
-          <section class="testimonial-container">
+          <!-- testimonial -->
+          <section class="testimonial-container ">
             <div class="w-full md:container mx-auto pb-24">
-                <h2 class="text-center text-5xl text-[#212121] font-bold leading-tight">Clients We Help</h2>
+                <h2 class="text-center lg:text-5xl text-3xl text-[#212121] font-bold leading-tight">Clients We Help</h2>
                 <p class="mt-4 mb-10 text-center text-[#494949] text-base font-medium">
                     See what our clients are saying about their experiences with us. Real stories from real clients who found their dream
                     properties.
@@ -293,15 +314,15 @@
                 </div>
             </div>
           </section>
+          
           <section class="next-project-container ">
             <div class="flex flex-col items-center text-center py-28 bg-[url('./images/bg.jpg')] bg-cover">
-                <!-- Header Section -->
                 <div class="mb-8">
                     <button
                         class="bg-[#d4f5c8] text-[#494949] py-2 px-4 rounded-full font-bold text-base gap-2 mb-4">
                         <i class="fa-solid fa-arrow-right"></i> Let's Connect
                     </button>
-                    <h2 class="text-5xl text-[#212121] font-bold leading-tight mb-6">Let's Discuss Next Project</h2>
+                    <h2 class="lg:text-5xl text-3xl text-[#212121] font-bold leading-tight mb-6">Let's Discuss Next Project</h2>
                     <p class="mb-3 text-[#494949] text-base font-medium">
                         Ready to bring your vision to life? Let’s discuss how we can turn your ideas into a captivating reality.
                     </p>
@@ -310,29 +331,30 @@
                 <!-- Form Section -->
                 <form class="w-full max-w-xl space-y-4">
                     <!-- Name Fields -->
-                    <div class="flex gap-4">
+                    <div class="flex flex-col md:flex-row gap-4">
                         <input type="text" placeholder="First Name*" required
-                            class="flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
+                            class="w-full md:flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
                         <input type="text" placeholder="Last Name*" required
-                            class="flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
+                            class="w-full md:flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
                     </div>
-            
+                
                     <!-- Contact Fields -->
-                    <div class="flex gap-4">
+                    <div class="flex flex-col md:flex-row gap-4">
                         <input type="tel" placeholder="Phone Number*" required
-                            class="flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
-                        <input type="email" placeholder="Email Number*" required
-                            class="flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
+                            class="w-full md:flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
+                        <input type="email" placeholder="Email Address*" required
+                            class="w-full md:flex-1 px-4 py-3 border border-gray-200 rounded-full text-gray-700 placeholder-gray-400 bg-[#f9f9f9] focus:outline-none focus:ring-2 focus:ring-[#a7f050]">
                     </div>
-            
+                
                     <!-- Message Field -->
                     <textarea placeholder="Write your message here"
                         class="w-full px-4 py-3 border border-gray-200 rounded-2xl text-gray-700 placeholder-gray-400 bg-[#f9f9f9] h-32 resize-none focus:outline-none focus:ring-2 focus:ring-[#a7f050]"></textarea>
-            
+                
                     <!-- Submit Button -->
                     <button type="submit"
                         class="w-full bg-[#a7f050] text-[#212121] py-3 rounded-full font-bold text-lg flex justify-center items-center gap-2">
-                        Send Mail <i class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i>
+                        Send Mail <i
+                            class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i>
                     </button>
                 </form>
             </div>
@@ -353,7 +375,7 @@
                 </div>
         
                 <!-- Navigation Links -->
-                <div class="flex justify-center space-x-32 text-[#E9E9E9] text-base font-medium mb-10">
+                <div class="flex flex-col space-y-5 lg:space-y-0 lg:flex-row lg:items-center lg:justify-center lg:space-x-32 text-[#E9E9E9] text-base font-medium mb-10">
                     <a href="#" class="hover:text-white">Home</a>
                     <a href="#" class="hover:text-white">Services</a>
                     <a href="#" class="hover:text-white">Portfolio</a>
@@ -363,7 +385,7 @@
         
                 <!-- Call-to-Action Button -->
                 <div>
-                    <a class="btn rounded-full text-xl font-extrabold bg-lightGreen">Book Consult <i
+                    <a class="btn w-full lg:w-auto rounded-full text-xl font-extrabold bg-lightGreen">Book Consult <i
                             class="fa-solid fa-arrow-up text-xl bg-black text-white rotate-45 h-8 w-8 flex items-center justify-center rounded-full"></i></a>
                 </div>
             </div>
